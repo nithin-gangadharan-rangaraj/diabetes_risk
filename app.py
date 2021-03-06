@@ -24,22 +24,40 @@ def main():
 	st.markdown(html, unsafe_allow_html=True)
 	st.subheader("*Change it **later***")
   
-	age = st.slider("Select your age", 1, 150)
+	Age = st.slider("Select your age", 1, 150)
   
 	select_gender = st.selectbox('Gender', ['Male', 'Female'])
 	if (select_gender == 'Male'):
-		gender = 1
+		Gender = 1
 	elif (select_gender == 'Female'):
-		gender = 0
+		Gender = 0
 	
 	check_polyuria = st.checkbox('Polyuria')
-	if check_polyuria:
-		polyuria = 1
-	else:
-		polyuria = 0
-	with st.beta_expander('See info about Polyuria'):
-		st.write("""Polyuria is defined as the frequent passage of large volumes of urine – 
-			 more than 3 litres a day compared to the normal daily urine output in adults of about 1 to 2 litres.""")
-    
+	Polyuria = 1 if check_polyuria else 0
+		
+	check_polydipsia = st.checkbox('Polydipsia')
+	Polydipsia = 1 if check_polydipsia else 0
+	    
+	check_weight_loss = st.checkbox('Sudden Weight Loss')
+	sudden_weight_loss = 1 if check_weight_loss else 0
+	
+	check_polyphagia = st.checkbox('Polyphagia')
+	Polyphagia = 1 if check_polyphagia else 0
+		
+	check_blur = st.checkbox('Visual Blurring')
+	visual_blurring = 1 if check_blur else 0
+		
+	check_itch = st.checkbox('Itching')
+	Itching = 1 if check_itch else 0
+			
+	check_irr = st.checkbox('Irritability')
+	Irritability = 1 if check_irr else 0
+	
+	check_par = st.checkbox('Partial Paresis')
+	partial_paresis = 1 if check_par else 0
+	
+	check_alopecia = st.checkbox('Alopecia')
+	Alopecia = 1 if check_alopecia else 0
+
 if __name__ == '__main__':
 	main()
