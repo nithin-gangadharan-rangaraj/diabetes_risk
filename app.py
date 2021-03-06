@@ -61,7 +61,8 @@ def main():
 	
 	x = [Age, Gender, Polyuria, Polydipsia, sudden_weight_loss, Polyphagia, visual_blurring, Itching, Irritability, partial_paresis, Alopecia]
 	x = np.array(x)
-	print("You are at ", round(((prediction_model.predict_proba(x.reshape(1, -1))*100)[0][1]),2), "% at risk")
+	if (st.button('Check Results')):
+		st.write("You are at ", round(((prediction_model.predict_proba(x.reshape(1, -1))*100)[0][1]),2), "% at risk")
 
 if __name__ == '__main__':
 	main()
