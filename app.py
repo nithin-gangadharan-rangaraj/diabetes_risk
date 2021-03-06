@@ -68,7 +68,7 @@ def main():
 		if (result > 50.0):
 			st.write("You are at ",result, "% at risk")
 		elif (result <=50.0):
-			st.write("Don't worry! You are safe")
+			st.write("Don't worry! You are safe 😀")
 
 if __name__ == '__main__':
 	main()
