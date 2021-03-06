@@ -6,7 +6,7 @@ import streamlit as st
 PAGE_CONFIG = {"page_title":"Diabetes Risk Prediction","page_icon":"💪","layout":"centered"}
 st.set_page_config(**PAGE_CONFIG)
 
-pickle_in = open('svm_diabetes.pkl','rb')
+pickle_in = open('model.pkl','rb')
 prediction_model = pickle.load(pickle_in)
 
 st.title("Diabetes Risk Prediction")
