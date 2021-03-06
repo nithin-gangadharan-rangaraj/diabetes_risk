@@ -7,7 +7,7 @@ PAGE_CONFIG = {"page_title":"Diabetes Risk Prediction","page_icon":"💪","layou
 st.set_page_config(**PAGE_CONFIG)
 
 pickle_in = open('svm_diabetes.pkl','rb')
-model = pickle.load(pickle_in)
+prediction_model = pickle.load(pickle_in)
 
 st.title("Diabetes Risk Prediction")
 
@@ -58,6 +58,12 @@ def main():
 	
 	check_alopecia = st.checkbox('Alopecia')
 	Alopecia = 1 if check_alopecia else 0
+	
+	pickle_in = open('/content/gdrive/MyDrive/svm_diabetes.pkl', 'rb') 
+
+	x = [Age, Gender, Polyuria, Polydipsia, sudden_weight_loss, Polyphagia, visual_blurring, Itching, Irritability, partial_paresis, Alopecia]
+	x = np.array(x)
+	print("You are at ", round(((prediction_model.predict_proba(x.reshape(1, -1))*100)[0][1]),2), "% at risk")
 
 if __name__ == '__main__':
 	main()
