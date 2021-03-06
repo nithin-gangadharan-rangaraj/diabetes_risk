@@ -24,13 +24,13 @@ def main():
 	st.markdown(html, unsafe_allow_html=True)
 	st.subheader("*Check if you have the following symptoms*")
   
-  age = st.slider("Select your age", 1, 150)
+	age = st.slider("Select your age", 1, 150)
   
-  gender = st.selectbox('Gender', ['Male', 'Female'])
+	gender = st.selectbox('Gender', ['Male', 'Female'])
 	if (gender == 'Male'):
-    st.write(0)
-  elif (gender == 'Female'):
-    st.write(1)
+		st.write(0)
+	elif (gender == 'Female'):
+		st.write(1)
     
 if __name__ == '__main__':
 	main()
