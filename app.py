@@ -22,15 +22,17 @@ background-size: cover;
 
 def main():
 	st.markdown(html, unsafe_allow_html=True)
-	st.subheader("*Change it **later***")
+	st.subheader("Please *enter the following details* to know your results")
   
 	Age = st.slider("Select your age", 1, 150)
   
-	select_gender = st.selectbox('Gender', ['Male', 'Female'])
+	select_gender = st.selectbox('Select your gender', ['Male', 'Female'])
 	if (select_gender == 'Male'):
 		Gender = 1
 	elif (select_gender == 'Female'):
 		Gender = 0
+	
+	st.text("Please *check* the symptoms faced")
 	
 	check_polyuria = st.checkbox('Polyuria')
 	Polyuria = 1 if check_polyuria else 0
