@@ -26,11 +26,17 @@ def main():
   
 	age = st.slider("Select your age", 1, 150)
   
-	gender = st.selectbox('Gender', ['Male', 'Female'])
-	if (gender == 'Male'):
-		st.write(0)
-	elif (gender == 'Female'):
-		st.write(1)
+	select_gender = st.selectbox('Gender', ['Male', 'Female'])
+	if (select_gender == 'Male'):
+		gender = 1
+	elif (select_gender == 'Female'):
+		gender = 0
+	
+	check_polyuria = st.checkbox('Polyuria')
+	if check_polyuria:
+		polyuria = 1
+	else:
+		polyuria = 0
     
 if __name__ == '__main__':
 	main()
