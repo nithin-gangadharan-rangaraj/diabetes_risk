@@ -37,6 +37,9 @@ def main():
 		polyuria = 1
 	else:
 		polyuria = 0
+	with st.beta_expander('See info about Polyuria'):
+		st.write("""Polyuria is defined as the frequent passage of large volumes of urine – 
+			 more than 3 litres a day compared to the normal daily urine output in adults of about 1 to 2 litres.""")
     
 if __name__ == '__main__':
 	main()
