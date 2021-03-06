@@ -22,7 +22,7 @@ background-size: cover;
 
 def main():
 	st.markdown(html, unsafe_allow_html=True)
-	st.subheader("*Check if you have the following symptoms*")
+	st.subheader("*Change it **later***")
   
 	age = st.slider("Select your age", 1, 150)
   
