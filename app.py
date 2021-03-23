@@ -11,14 +11,6 @@ prediction_model = pickle.load(pickle_in)
 
 st.title("Diabetes Risk Prediction")
 
-html = '''
-<style>
-body {
-background-image: url("https://i.pinimg.com/originals/a5/91/17/a59117a046cbc0082afe2ce27622c0c4.jpg");
-background-size: cover;
-}
-</style>
-'''
 
 hide_streamlit_style = """
 <style>
