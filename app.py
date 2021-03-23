@@ -32,7 +32,7 @@ def main():
 	st.markdown(hide_streamlit_style, unsafe_allow_html = True)
 	st.markdown("**Please *enter the following details* to know your results**")
   
-	Age = st.slider("Select your age", 1, 150)
+	Age = st.slider("Select your age", 1, 100)
   
 	select_gender = st.selectbox('Select your gender', ['Male', 'Female'])
 	if (select_gender == 'Male'):
