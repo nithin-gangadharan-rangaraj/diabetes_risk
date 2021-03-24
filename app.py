@@ -86,10 +86,9 @@ def main():
 		elif (result <=50.0):
 			st.write("Don't worry! You are safe 😀")
 	
-	my_expander = st.beta_expander()
+	my_expander = st.beta_expander("Hello")
 	with my_expander:
-    		'Hello there!'
-    		clicked = st.button('Click me!')
+   		clicked = st.button('Click me!')
 
 if __name__ == '__main__':
 	main()
