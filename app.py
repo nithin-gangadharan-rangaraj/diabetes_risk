@@ -80,15 +80,12 @@ def main():
 	x = [Age, Gender, Polyuria, Polydipsia, sudden_weight_loss,weakness, Polyphagia,Genital_thrush, visual_blurring, Itching, Irritability, partial_paresis,delayed_healing, Alopecia]
 	x = np.array(x)
 	result = round(((prediction_model.predict_proba(x.reshape(1, -1))*100)[0][1]),2)
-	if (st.button('Check Results')):
-		if (result > 50.0):
+	my_expander = st.beta_expander("Check Results")
+	with my_expander:
+   		if (result > 50.0):
 			st.write("You are at ",result, "% at risk")
 		elif (result <=50.0):
 			st.write("Don't worry! You are safe 😀")
-	
-	my_expander = st.beta_expander("Hello")
-	with my_expander:
-   		clicked = st.button('Click me!')
 
 if __name__ == '__main__':
 	main()
