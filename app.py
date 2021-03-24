@@ -82,7 +82,7 @@ def main():
 	result = round(((prediction_model.predict_proba(x.reshape(1, -1))*100)[0][1]),2)
 	my_expander = st.beta_expander("Check Results")
 	with my_expander:
-   		if (result > 50.0):
+		if (result > 50.0):
 			st.write("You are at ",result, "% at risk")
 		elif (result <=50.0):
 			st.write("Don't worry! You are safe 😀")
