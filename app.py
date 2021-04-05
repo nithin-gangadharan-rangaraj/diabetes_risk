@@ -43,38 +43,39 @@ def main():
 	check_polyuria = st.checkbox('Polyuria - Excessive urination') 
 	Polyuria = 1 if check_polyuria else 0
 		
-	check_polydipsia = st.checkbox('Polydipsia')
+	check_polydipsia = st.checkbox('Polydipsia - Excessive thirst')
 	Polydipsia = 1 if check_polydipsia else 0
-	    
+		
+	check_polyphagia = st.checkbox('Polyphagia - Excessive eating')
+	Polyphagia = 1 if check_polyphagia else 0
+	
+	check_genital_thrush = st.checkbox('Genital Thrush - Irritation in genital area')
+	Genital_thrush = 1 if check_genital_thrush else 0
+	
+	check_irr = st.checkbox('Irritability - Feeling agitated')
+	Irritability = 1 if check_irr else 0
+	
+	check_par = st.checkbox('Partial Paresis - Muscle weakness or impairment')
+	partial_paresis = 1 if check_par else 0
+	
+	check_alopecia = st.checkbox('Alopecia - Baldness')
+	Alopecia = 1 if check_alopecia else 0
+	
 	check_weight_loss = st.checkbox('Sudden Weight Loss')
 	sudden_weight_loss = 1 if check_weight_loss else 0
 	
 	check_weakness = st.checkbox('Weakness')
 	weakness = 1 if check_weakness else 0
 	
-	check_polyphagia = st.checkbox('Polyphagia')
-	Polyphagia = 1 if check_polyphagia else 0
-	
-	check_genital_thrush = st.checkbox('Genital Thrush')
-	Genital_thrush = 1 if check_genital_thrush else 0
-		
 	check_blur = st.checkbox('Visual Blurring')
 	visual_blurring = 1 if check_blur else 0
 		
 	check_itch = st.checkbox('Itching')
 	Itching = 1 if check_itch else 0
-			
-	check_irr = st.checkbox('Irritability')
-	Irritability = 1 if check_irr else 0
 	
 	check_del = st.checkbox('Delayed healing')
 	delayed_healing = 1 if check_del else 0
 	
-	check_par = st.checkbox('Partial Paresis')
-	partial_paresis = 1 if check_par else 0
-	
-	check_alopecia = st.checkbox('Alopecia')
-	Alopecia = 1 if check_alopecia else 0
 	
 	x = [Age, Gender, Polyuria, Polydipsia, sudden_weight_loss,weakness, Polyphagia,Genital_thrush, visual_blurring, Itching, Irritability, partial_paresis,delayed_healing, Alopecia]
 	x = np.array(x)
