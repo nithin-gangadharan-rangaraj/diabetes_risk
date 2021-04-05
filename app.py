@@ -14,7 +14,7 @@ st.title("Diabetes Risk Prediction")
 
 hide_streamlit_style = """
 <style>
-#Mainmenu {visibility: hidden;}
+#MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 </style>
 """
