@@ -40,7 +40,7 @@ def main():
 	
 	st.markdown("Please ***check*** the symptoms exhibited")
 	
-	check_polyuria = st.checkbox('Polyuria')
+	check_polyuria = st.checkbox('Polyuria - *Excessive urination*') 
 	Polyuria = 1 if check_polyuria else 0
 		
 	check_polydipsia = st.checkbox('Polydipsia')
