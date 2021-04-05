@@ -43,7 +43,8 @@ def main():
 	
 	check_polyuria = st.checkbox('Polyuria (Excessive urination)') 
 	Polyuria = 1 if check_polyuria else 0
-		
+	st.text("Excessive urination")
+
 	check_polydipsia = st.checkbox('Polydipsia (Excessive thirst)')
 	Polydipsia = 1 if check_polydipsia else 0
 		
