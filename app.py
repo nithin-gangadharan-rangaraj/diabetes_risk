@@ -82,7 +82,7 @@ def main():
 	x = np.array(x)
 	result = round(((prediction_model.predict_proba(x.reshape(1, -1))*100)[0][1]),2)
 	button = st.button("Check Results")
-	with button:
+	if button:
 		if (result > 50.0):
 			st.write("You are at ",result, "% at risk")
 		elif (result <=50.0):
