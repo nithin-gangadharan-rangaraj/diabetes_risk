@@ -28,7 +28,7 @@ def main():
 		}
 		</style>
 		""", unsafe_allow_html=True) 
-	st.markdown(hide_streamlit_style, unsafe_allow_html = True)
+	#st.markdown(hide_streamlit_style, unsafe_allow_html = True)
 	st.markdown("**Please *enter the following details* to know your results**")
   
 	Age = st.slider("Select your age", 1, 100)
