@@ -84,7 +84,7 @@ def main():
 	button = st.button("Check Results")
 	if button:
 		if (result > 50.0):
-			st.write("You are at ",result, "% at risk")
+			st.write("You are ",result, "% at risk")
 		elif (result <=50.0):
 			st.write("Don't worry! You are safe 😀")
 
